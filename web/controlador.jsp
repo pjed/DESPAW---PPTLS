@@ -10,10 +10,12 @@
 <%
 
     Logica game = new Logica();
-
+    
+    // Ponemos las reglas del juego
     game.setRules();
 
     do {
+        // Play
         String result = game.play();
         String [] variables = game.getO();
         
