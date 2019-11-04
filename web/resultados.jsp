@@ -12,6 +12,11 @@
         <title>Resultados</title>
     </head>
     <body>
-        <textarea id="resultado" name="resultado" cols="100" rows="50"></textarea>
+        <%
+            String ganador = (String) session.getAttribute("ganador");
+            String logFinal = (String) session.getAttribute("logFinal");
+            String log = (String) session.getAttribute("log");
+        %>
+        <textarea id="resultado" name="resultado" cols="25" rows="5"><%out.print(log+ "\r\n" +logFinal + "\r\n" + ganador);%></textarea>
     </body>
 </html>
