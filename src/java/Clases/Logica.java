@@ -30,8 +30,8 @@ public class Logica {
         Random g = new Random();
         p1 = g.nextInt(5);
         p2 = g.nextInt(5);
-        
-        return vs[p1][p2];
+        String resultado = vs[p1][p2];
+        return resultado;
     }
 
     // Ponemos las reglas del juego
