@@ -12,6 +12,6 @@
         <title>Resultados</title>
     </head>
     <body>
-        
+        <textarea id="resultado" name="resultado" cols="100" rows="50"></textarea>
     </body>
 </html>
