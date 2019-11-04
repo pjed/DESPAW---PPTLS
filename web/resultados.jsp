@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Resultados</title>
+        <title>Resultados Juego</title>
     </head>
     <body>
         <textarea id="resultado" name="resultado" cols="100" rows="50"></textarea>

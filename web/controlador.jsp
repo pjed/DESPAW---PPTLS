@@ -20,6 +20,7 @@
         String [] variables = game.getO();
         
         // Ponemos en sesión con qué variables van a jugar
+        // Resultado final
         session.setAttribute("log", variables[game.getP1()] + " vs " + variables[game.getP2()]);
         
         if (game.getP1() != game.getP2()) {

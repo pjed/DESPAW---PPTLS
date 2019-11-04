@@ -41,6 +41,7 @@ public class Logica {
                 vs[i][j] = "";
             }
         }
+        // Reglas
         vs[ROCK][SCISSORS] = "aplasta";
         vs[ROCK][LIZARD] = "aplasta";
         vs[PAPER][ROCK] = "cubre";
@@ -53,14 +54,17 @@ public class Logica {
         vs[LIZARD][SPOCK] = "envenena";
     }
 
+    // Getter del array de elecciones posibles
     public String[] getO() {
         return o;
     }
     
+    // Lo que le ha tocado al jugador 1
     public int getP1() {
         return p1;
     }
-
+    
+    // Lo que le ha tocado al jugador 2
     public int getP2() {
         return p2;
     }
