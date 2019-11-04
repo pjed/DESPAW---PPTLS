@@ -25,11 +25,11 @@
         if (game.getP1() != game.getP2()) {
             if (result.equals("")) {
                 // Si el jugador 2 ha ganado
-                session.setAttribute("ganador", "Jugador 2 ha ganado");
+                session.setAttribute("ganador", "Jugador 2 Ha Ganado");
                 session.setAttribute("logFinal", variables[game.getP2()] + " " + result + " " + variables[game.getP1()]);
             } else {
                 // Si el jugador 1 ha ganado
-                session.setAttribute("ganador", "Jugador 1 ha ganado");
+                session.setAttribute("ganador", "Jugador 1 Ha Ganado");
                 session.setAttribute("logFinal", variables[game.getP1()] + " " + result + " " + variables[game.getP2()]);
             }
         }

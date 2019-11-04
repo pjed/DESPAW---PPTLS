@@ -12,7 +12,8 @@ import java.util.Random;
  * @author alvaro
  */
 public class Logica {
-
+    
+    // Valores estáticos
     static final int ROCK = 0;
     static final int PAPER = 1;
     static final int SCISSORS = 2;

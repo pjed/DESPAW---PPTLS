@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Piedra, Papel, Tijera, Largarto o Spook</title>
+        <title>Piedra, Papel, Tijera, Largarto, Spook</title>
     </head>
     <body>
         <form name="frmUsuario" action="controlador.jsp" method="POST">
