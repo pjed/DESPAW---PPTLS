@@ -31,7 +31,7 @@ public class Logica {
      * Método que iniciará el juego
      * @author adonoso
      * @since 1.0
-     * @return String --> Devolverá alguna regla que ponemos en setRules(), ya que comprueba contra esas reglas.
+     * @return String - Devolverá alguna regla que ponemos en setRules(), ya que comprueba contra esas reglas.
      */
     public String play() {
         Random g = new Random();
@@ -68,7 +68,7 @@ public class Logica {
      * Devuelve el vector estático de posibles elecciones
      * @author adonoso
      * @since 1.0
-     * @return String[] --> El vector estático
+     * @return String[] - El vector estático
      */
     public String[] getO() {
         return o;
@@ -78,7 +78,7 @@ public class Logica {
      * Devuelve lo que le ha tocado al jugador 1 en el método play()
      * @author adonoso
      * @since 1.0
-     * @return int --> Lo que le ha tocado
+     * @return int - Lo que le ha tocado
      */
     public int getP1() {
         return p1;
@@ -88,7 +88,7 @@ public class Logica {
      * Devuelve lo que le ha tocado al jugador 2 en el método play()
      * @author adonoso
      * @since 1.0
-     * @return int --> Lo que le ha tocado
+     * @return int - Lo que le ha tocado
      */
     public int getP2() {
         return p2;
