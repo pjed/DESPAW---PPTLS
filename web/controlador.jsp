@@ -1,21 +1,21 @@
 <%-- 
     Document   : controlador
     Created on : 30-oct-2019, 14:00:54
-    Author     : alvaro
+    Author     : adonoso
 --%>
 
 <%@page import="Clases.Logica"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    // Clase principal
+    // Clase principal del juego
     Logica game = new Logica();
 
     // Ponemos las reglas del juego
     game.setRules();
     
     do {
-        // Play
+        // Iniciamos el juego
         String result = game.play();
         String[] variables = game.getO();
 

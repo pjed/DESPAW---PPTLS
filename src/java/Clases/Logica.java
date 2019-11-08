@@ -9,7 +9,8 @@ import java.util.Random;
 
 /**
  *
- * @author alvaro
+ * @author adonoso
+ * @version %I%
  */
 public class Logica {
     
@@ -19,13 +20,19 @@ public class Logica {
     static final int SCISSORS = 2;
     static final int SPOCK = 3;
     static final int LIZARD = 4;
-
+    
+    // Variables juego
     private int p1;
     private int p2;
     private String vs[][] = new String[5][5];
     private String[] o = {"Piedra", "Papel", "Tijeras", "Spock", "Lagarto"};
 
-    // Método que elegirá el ganador (Jugar)
+    /**
+     * Método que iniciará el juego
+     * @author adonoso
+     * @since 1.0
+     * @return String --> Devolverá alguna regla que ponemos en setRules(), ya que comprueba contra esas reglas.
+     */
     public String play() {
         Random g = new Random();
         p1 = g.nextInt(5);
@@ -34,7 +41,10 @@ public class Logica {
         return resultado;
     }
 
-    // Ponemos las reglas del juego
+    /**
+     * @author adonoso
+     * @since 1.0
+     */
     public void setRules() {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -54,17 +64,32 @@ public class Logica {
         vs[LIZARD][SPOCK] = "envenena";
     }
 
-    // Getter del array de elecciones posibles
+    /**
+     * Devuelve el vector estático de posibles elecciones
+     * @author adonoso
+     * @since 1.0
+     * @return String[] --> El vector estático
+     */
     public String[] getO() {
         return o;
     }
     
-    // Lo que le ha tocado al jugador 1
+    /**
+     * Devuelve lo que le ha tocado al jugador 1 en el método play()
+     * @author adonoso
+     * @since 1.0
+     * @return int --> Lo que le ha tocado
+     */
     public int getP1() {
         return p1;
     }
     
-    // Lo que le ha tocado al jugador 2
+    /**
+     * Devuelve lo que le ha tocado al jugador 2 en el método play()
+     * @author adonoso
+     * @since 1.0
+     * @return int --> Lo que le ha tocado
+     */
     public int getP2() {
         return p2;
     }

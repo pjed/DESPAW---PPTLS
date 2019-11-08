@@ -13,10 +13,12 @@
     </head>
     <body>
         <%
+            // Valores devueltos en controlador.jsp, los mostraremos en el textarea
             String ganador = (String) session.getAttribute("ganador");
             String logFinal = (String) session.getAttribute("logFinal");
             String log = (String) session.getAttribute("log");
         %>
+        <!-- Aquí mostraremos los resultados -->
         <textarea id="resultado" name="resultado" cols="25" rows="5"><%out.print(log+ "\r\n" +logFinal + "\r\n" + ganador);%></textarea>
     </body>
 </html>

@@ -9,11 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>¡Piedra, Papel, Tijera, Largarto, Spock!</title>
+        <title>¡Piedra, Papel, Tijera, Lagarto, Spock!</title>
     </head>
     <body>
+        <!-- Formulario -->
         <form name="frmUsuario" action="controlador.jsp" method="POST">
+            <!-- Aquí podrá insertar el nombre del jugador el usuario -->
             <span>Nombre: </span><input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            <!-- El botón llamará al controlador, comenzando el juego -->
             <input type="submit" name="boton" value="Enviar">
         </form>
     </body>
